@@ -8,9 +8,77 @@ body {
 	height: auto;
 
 	.MenuBar {
-		width: 194px;
+		width: 171px;
 		min-height: 100vh;
 		height: auto;
 		background-color: #110422;
+		display: inline-block;
+
+		ol.nav {
+			padding-left: 0;
+			margin: 0;
+
+			li {
+				padding-top: 25px;
+    			padding-bottom: 0;
+
+				span.MenuSectionHeader {
+					font-size: 12px;
+					border-bottom: 1px solid #27212d;
+    				padding: 5px 15px 10px;
+    				display: block;
+					color: #8d8d8d;
+				    font-weight: bold;
+				    font-family: 'Roboto Condensed', sans-serif;
+				}
+
+				ol {
+					padding: 0;
+
+					li.MenuLink {
+						padding: 5px 15px;
+
+						a {
+							color: #fff;
+							font-size: 15px;
+							text-decoration: none;
+						    font-family: 'Roboto Condensed', sans-serif;
+						    font-weight: normal;
+						    padding: 5px 15px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	.ContentWrapper {
+		display: inline-block;
+		position: absolute;
+		width: ~"calc(100% - 171px)";
+
+		.SearchWrapper {
+			background-color: #332469;
+			height: 60px;
+		    width: 100%;
+		    position: relative;
+
+		    .SearchBox {
+		    	input[type="search"] {
+		    		width: 100%;
+				    padding: 0;
+				    margin: 0;
+				    -moz-appearance: none;
+				    -webkit-appearance: none;
+				    outline: 0;
+				    border: 0;
+				    font-size: 18px;
+				    font-family: 'HelveticaNeueLT-Condensed','helvetica neue','helvetica';
+				    color: #332967;
+				    padding-left: 10px;
+		    	}
+		    }
+		}
 	}
 }

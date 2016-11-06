@@ -7,8 +7,64 @@ body {
   height: auto;
 }
 .SiteWrapper .MenuBar {
-  width: 194px;
+  width: 171px;
   min-height: 100vh;
   height: auto;
   background-color: #110422;
+  display: inline-block;
+}
+.SiteWrapper .MenuBar ol.nav {
+  padding-left: 0;
+  margin: 0;
+}
+.SiteWrapper .MenuBar ol.nav li {
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+.SiteWrapper .MenuBar ol.nav li span.MenuSectionHeader {
+  font-size: 12px;
+  border-bottom: 1px solid #27212d;
+  padding: 5px 15px 10px;
+  display: block;
+  color: #8d8d8d;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.SiteWrapper .MenuBar ol.nav li ol {
+  padding: 0;
+}
+.SiteWrapper .MenuBar ol.nav li ol li.MenuLink {
+  padding: 5px 15px;
+}
+.SiteWrapper .MenuBar ol.nav li ol li.MenuLink a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  padding: 5px 15px;
+}
+.SiteWrapper .ContentWrapper {
+  display: inline-block;
+  position: absolute;
+  width: calc(100% - 171px);
+}
+.SiteWrapper .ContentWrapper .SearchWrapper {
+  background-color: #332469;
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+.SiteWrapper .ContentWrapper .SearchWrapper .SearchBox input[type="search"] {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  border: 0;
+  font-size: 18px;
+  font-family: 'HelveticaNeueLT-Condensed', 'helvetica neue', 'helvetica';
+  color: #332967;
+  padding-left: 10px;
 }
