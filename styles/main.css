@@ -172,6 +172,10 @@ h2 {
 .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoInfo span.Genre {
   font-size: 12px;
 }
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoInfo span.Rating {
+  float: right;
+  padding-right: 20px;
+}
 .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem span.Price {
   position: absolute;
   bottom: 82px;

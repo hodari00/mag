@@ -23,12 +23,23 @@ var Plejmo = function() {
 								+ '<span class="Price">Kolla nu ' + that.VideoList[I]['price'] + 'kr</span>'
 								+ '<div class="VideoInfo">'
 								+ '<span class="Title">' + that.VideoList[I]['title'] + '</span><div class="TitleMenu"></div><br>'
-								+ '<span class="Genre">' + that.VideoList[I]['genre'] + '</span>'
+								+ '<span class="Genre">' + that.VideoList[I]['genre'] + '</span><br>'
+								+ '<span class="Rating">' + that.VideoList[I]['rating'] + '<span>'
 								+ '</div>'
 								+ '</div>'
 			}
 
 			$('.VideosWrapper').html(VideoListHTML);
+		}).done(function() {
+			$('.Rating').each(function() {
+				Rating = $(this).text();
+				$(this).rateYo({
+					rating: Rating,
+					starWidth: "10px",
+					ratedFill: "#332967"
+				});
+
+			})
 		});
 	}
 }
@@ -36,7 +47,7 @@ var Plejmo = function() {
 // Initialize
 var PlejmoFilms;
 $(window).on('load', function() {
-	PlejmoFilms    = new Plejmo(window, document);
+	PlejmoFilms    = new Plejmo(window);
 
 	PlejmoFilms.Init();
 });

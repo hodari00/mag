@@ -34,6 +34,9 @@
   .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoPoster img {
     width: inherit;
   }
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoInfo {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 800px) {
   .SiteWrapper .ContentWrapper .footer .FooterMenu {
