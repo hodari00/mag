@@ -6,3 +6,45 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 1000px) and (max-width: 1292px) {
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 615px) and (max-width: 917px) {
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .SiteWrapper .ContentWrapper .VideoCategory {
+    padding: 0 0;
+  }
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper {
+    width: 310px;
+  }
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem {
+    width: 135px;
+    height: 300px;
+  }
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoPoster {
+    width: 135px;
+    height: 198px;
+  }
+  .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoPoster img {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 800px) {
+  .SiteWrapper .ContentWrapper .footer .FooterMenu {
+    width: 100%;
+    float: none;
+  }
+  .SiteWrapper .ContentWrapper .footer .FooterQuote {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    width: 75%;
+    line-height: 40px;
+  }
+}

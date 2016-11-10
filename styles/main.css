@@ -3,6 +3,7 @@ html {
   margin: 0;
   height: 100%;
   padding: 0;
+  background-color: #110422;
   font-family: 'Roboto Condensed', sans-serif;
 }
 h2 {
@@ -11,16 +12,18 @@ h2 {
 }
 .SiteWrapper {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+  display: block;
   background-color: #eeeeeb;
 }
 .SiteWrapper .MenuBar {
   width: 171px;
-  min-height: 100vh;
-  height: 100%;
+  min-height: 100%;
   background-color: #110422;
   display: inline-block;
   float: left;
+  position: relative;
 }
 .SiteWrapper .MenuBar ol.nav {
   padding-left: 0;
@@ -63,7 +66,7 @@ h2 {
   position: absolute;
   width: calc(100% - 171px);
   float: left;
-  height: 100%;
+  height: auto;
   position: relative;
   background-color: #eeeeeb;
 }
@@ -137,16 +140,14 @@ h2 {
 }
 .SiteWrapper .ContentWrapper .VideoCategory {
   margin: 50px auto;
-  width: 87%;
+  padding: 0 10%;
 }
 .SiteWrapper .ContentWrapper .VideoCategory h2 {
   margin-left: 10px;
 }
 .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper {
   margin: 0 auto;
-  /*.VideoItem:nth-child(4n) {
-					margin-right: 0;
-				}*/
+  overflow: hidden;
 }
 .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem {
   height: 426px;
@@ -154,11 +155,118 @@ h2 {
   float: left;
   margin: 0 10px 25px;
   background-color: #fff;
+  position: relative;
 }
 .SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoPoster {
   height: 324px;
   width: 100%;
   background-color: #000;
+}
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoInfo {
+  padding-left: 20px;
+  padding-top: 35px;
+}
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoInfo span.Title {
+  font-weight: 700;
+}
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .VideoInfo span.Genre {
+  font-size: 12px;
+}
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem span.Price {
+  position: absolute;
+  bottom: 82px;
+  left: calc(50% - 60px);
+  background-color: #e26269;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .TitleMenu {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+}
+.SiteWrapper .ContentWrapper .VideoCategory .VideosWrapper .VideoItem .TitleMenu:after {
+  content: '\2807';
+  cursor: pointer;
+}
+.SiteWrapper .ContentWrapper .ButtonWrapper {
+  margin: 100px auto;
+  text-align: center;
+}
+.SiteWrapper .ContentWrapper .ButtonWrapper span.Text {
+  color: #656565;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Roboto', 'sans-serif';
+}
+.SiteWrapper .ContentWrapper .ButtonWrapper a {
+  text-decoration: none;
+  padding: 15px 98px;
+  background-color: #331b68;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.SiteWrapper .ContentWrapper .footer {
+  max-width: 100%;
+  overflow: auto;
+  height: auto;
+  background-color: #b6caab;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu {
+  margin-bottom: 30px;
+  height: auto;
+  overflow: auto;
+  float: left;
+  width: 66%;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li.Main {
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li {
+  float: left;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li ul.Columns {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li ul {
+  margin-top: 20px;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li ul li {
+  float: none;
+  padding-bottom: 10px;
+}
+.SiteWrapper .ContentWrapper .footer .FooterMenu ul li ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+}
+.SiteWrapper .ContentWrapper .footer .FooterQuote {
+  float: right;
+  width: 34%;
+  padding: 60px 0;
+}
+.SiteWrapper .ContentWrapper .footer .FooterQuote span {
+  color: #fff;
+  background-color: #e26269;
+  font-size: 23px;
 }
 .ClearFix {
   clear: both;

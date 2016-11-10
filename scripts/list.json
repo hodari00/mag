@@ -1,0 +1,51 @@
+[
+	{
+		"title": "The Martian",
+		"image": "Martian.png",
+		"genre": "Action",
+		"rating": 5,
+		"price": 39
+	},
+	{
+		"title": "Batman v Superman",
+		"image": "batmansuperman.png",
+		"genre": "Action",
+		"rating": 4,
+		"price": 39
+	},
+	{
+		"title": "BFG",
+		"image": "bfg.png",
+		"genre": "Action",
+		"rating": 3,
+		"price": 39
+	},
+	{
+		"title": "X-Men",
+		"image": "xmen.png",
+		"genre": "Action",
+		"rating": 5,
+		"price": 39
+	},
+	{
+		"title": "Zombies",
+		"image": "zombies.png",
+		"genre": "Action",
+		"rating": 4,
+		"price": 39
+	},
+	{
+		"title": "The 5th Wave",
+		"image": "5thwave.png",
+		"genre": "Action",
+		"rating": 3,
+		"price": 39
+	},
+	{
+		"title": "Witch Hunter",
+		"image": "witchhunter.png",
+		"genre": "Action",
+		"rating": 5,
+		"price": 39
+	}
+]
